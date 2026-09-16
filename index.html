@@ -155,10 +155,10 @@
   .process-step h3{ font-family: var(--font-sans); font-size: 1rem; font-weight:700; margin-top: 4px; }
   .process-step p{ color: var(--ink-secondary); font-size: 0.88rem; margin-top: 8px; }
   .service-card{
-    background: var(--surface); border: 1px solid var(--border); border-radius: 16px;
+    background: var(--surface); border: 1px solid var(--brand); border-radius: 16px;
     padding: clamp(24px, 3vw, 32px); display:flex; flex-direction:column; gap: 14px;
+    box-shadow: 0 0 0 1px var(--brand) inset;
   }
-  .service-card.is-lead{ border-color: var(--brand); box-shadow: 0 0 0 1px var(--brand) inset; }
   .service-tag{
     align-self:flex-start; font-size: 0.72rem; font-weight:800; letter-spacing:0.06em; text-transform:uppercase;
     padding: 4px 10px; border-radius: 100px; background: var(--brand-tint); color: var(--brand-ink-on-tint);
@@ -199,8 +199,11 @@
   .hero-preview-caption a{ font-weight: 700; text-decoration:none; white-space:nowrap; }
 
   /* approach */
-  .approach-row{ display:grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
-  .approach-item{ padding-top: 16px; border-top: 3px solid var(--brand); }
+  .approach-row{ display:grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .approach-item{
+    background: var(--surface); border-radius: 14px; padding: 20px;
+    border-top: 3px solid var(--brand);
+  }
   .approach-item h3{ font-size: 1.05rem; font-family: var(--font-sans); font-weight: 700; }
   .approach-item p{ color: var(--ink-secondary); margin-top: 8px; font-size: 0.92rem; }
 
@@ -297,7 +300,7 @@
 
 <div class="topics">
   <div class="wrap">
-    <section aria-labelledby="topics-h" style="padding-block: clamp(36px,6vw,54px);">
+    <section aria-labelledby="topics-h">
       <div class="section-head">
         <span class="eyebrow">Focus areas</span>
         <h2 id="topics-h">What we research</h2>
