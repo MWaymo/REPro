@@ -84,12 +84,17 @@
     object-fit: cover;
   }
 
+  /* ---------- TOP ACCENT BANNER ---------- */
+  .top-banner{
+    height: 5px; width: 100%;
+    background: linear-gradient(120deg, var(--brand-light), var(--brand) 55%, var(--brand-deep));
+  }
+
   /* ---------- NAV ---------- */
   nav.site-nav{
     position: sticky; top: env(safe-area-inset-top, 0px); z-index: 40;
     background: color-mix(in srgb, var(--bg) 86%, transparent);
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--hairline);
   }
   .nav-row{ display:flex; align-items:center; justify-content: space-between; gap: 16px; padding-block: 14px; flex-wrap: wrap; }
   .nav-word{ display:flex; align-items:center; gap:16px; }
@@ -307,6 +312,7 @@
     </div>
   </div>
 </nav>
+<div class="top-banner"></div>
 
 <div class="wrap hero">
   <div class="hero-inner">
